@@ -17,7 +17,6 @@
         $res = mysqli_query($conn, "SHOW TABLES LIKE 'Products'");
         echo "<h2>Creating Table 111111.</h2>";
         if (mysqli_num_rows($res) <= 0) {
-            echo "<h2>Creating Table.</h2>";
             //Create table if it does not exist
             $sql = file_get_contents("database/schema.sql");
             if(!mysqli_query($conn, $sql)){
@@ -28,8 +27,6 @@
         // Insert data from form
         $ProductName = $_POST['ProductName'];
         $Price = $_POST['Price'];
-        echo "<h2>Inserting into table</h2>";
-
         if ($stmt = mysqli_prepare($conn, "INSERT INTO Products (ProductName, Price) VALUES (?, ?)")) {
             mysqli_stmt_bind_param($stmt, 'sd', $ProductName, $Price);
             mysqli_stmt_execute($stmt);
