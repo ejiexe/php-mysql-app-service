@@ -7,4 +7,3 @@ $username   = getenv('bnaictmanager');
 $password   = getenv('Bw203app$');
 $db_name     = getenv('sampledb');
 $sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
-$MYSQL_SSL   = "true"
