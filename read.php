@@ -15,6 +15,7 @@
     }
 
     //Test if table exists
+    echo "<h2>About to read Table.</h2>";
     $res = mysqli_query($conn, "SHOW TABLES LIKE 'Products'");
 
     if (mysqli_num_rows($res) <= 0) {
