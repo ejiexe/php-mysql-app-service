@@ -3,7 +3,7 @@
 <div class="center-align">
 	<ul>
 		<div class="left-align">
-		<li><strong>View Catalog</strong></li>
+		<li><strong>Design by Dynamic</strong></li>
 			<li><a href="read.php"><strong>View Catalog</strong></a></li>
 			<li><a href="insert.php"><strong>Add a Product</strong></a></li>
 			<li><a href="update.php"><strong>Update a Product</strong></a></li>
